@@ -148,7 +148,91 @@
 #             return numbers[index]
 
 # print(func(numbers))
-from turtle import *
-speed(0); hideturtle(); bgcolor("white")
-for i in range(80): forward(i); left(59)
-done()
+# from turtle import *
+# speed(0); hideturtle(); bgcolor("white")
+# for i in range(80): forward(i); left(59)
+# done()
+
+
+# 1) შექმენი ფუნქცია, რომელიც შემოატანინებს მომხმარებელს რიცხვის და დაუმატებს მას 1-ს.
+
+def add_one():
+  a = int(input("Input Number: "))
+  return a + 1
+
+resoult = add_one()
+print(resoult)
+
+# 2) შექმენი ფუნქცია, რომელიც შემოატანინებს მომხარებელს რიცვს და დააბრუნებს "მაგარია!", თუ რიცხვი 10-ზე მეტია.
+
+def numer_check():
+  a = int(input("Input Number: "))
+  if a > 10:
+    return "You are Very Cool!"
+  return ""
+
+resoult = numer_check()
+print(resoult)
+
+# 3) შექმენი ფუნქცია, რომელიც შემოატანინებს მომხარებელს ორ ციფრს და დააბრუნებს მათ შორის უმცირესს.
+
+def min_num():
+  a = int(input("First Num: "))
+  b = int(input("Second Num: "))
+  return min(a, b)
+
+resoult = min_num()
+print(resoult)
+
+# 4) შექმენი ფუნქცია, რომელიც შემოატანინებს მომხარებელს ტექსტს და დააბრუნებს ტექსტის სიგრძეს.
+
+def text_length():
+  txt = input("Input Text: ")
+  return len(txt)
+
+result = text_length()
+print(result)
+
+# 5) შექმენი ფუნქცია, რომელიც შემოატანინებს მომხარებელს ორ რიცხვს და დააბრუნებს მათ ჯამს.
+
+def sums():
+  a = int(input("First Num: "))
+  b = int(input("Second Num: "))
+  return a + b
+
+result = sums()
+print(result)
+
+# 5) შექმენი ფუნქცია, რომელიც შემოატანინებს მომხარებელს და თუ ის დადებითი იქნება, დააბრუნებს "დადებითი", და თუ უარყოფითი იქნება, "უარყოფითი".
+
+def if_positive():
+  a = int(input("Enter A Num: "))
+  if a > 0:
+    return "Positive"
+  else:
+    return "Negative"
+
+resoult = if_positive()
+print(resoult)
+
+# 7) შექმენი ფუნქცია, რომელიც შემოატანინებს მომხარებელს რიცხვს და დააბრუნებს True, თუ ის ლუწია  და False, თუ არა.
+
+def is_positive():
+  a = int(input("Enter A Num: "))
+  if a % 2 == 0:
+    return "Even"
+  else:
+    return "Odd"
+
+resoult = is_positive()
+print(resoult)
+
+# 8) შექმენი ფუნქცია, რომელიც შემოატანინებს მომხარებელს ორ რიცხვს და დააბრუნებს მათ ჯამს დამატებული 5.
+
+def sum_and_five():
+  a = int(input("First Num: "))
+  b = int(input("Second Num: "))
+  return a + b + 5
+
+result = sum_and_five()
+print(result)
