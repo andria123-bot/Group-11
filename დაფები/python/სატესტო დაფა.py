@@ -236,3 +236,14 @@
 
 # result = sum_and_five()
 # print(result)
+
+# num = 0
+
+# while num < 7:
+#   num += 3
+
+#   if num == 6:
+#     continue
+
+#   print(num)
+  
